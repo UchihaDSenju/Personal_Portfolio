@@ -1,0 +1,96 @@
+@media(max-width: 1200px){
+    #projects{
+        flex-direction: column;
+    }
+}
+body{
+    text-align: center;
+    background-color: rgb(10,10,35);
+}
+.nav{
+    background-color: rgb(145, 21, 21);
+    position: sticky;
+    top: 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    border-radius: 2px;
+    z-index: 1;
+    
+}
+#navbar a{
+    color: rgb(192, 191, 189);
+    text-decoration: none;
+    padding: 8px;
+    position: sticky;
+    font-family: 'Anaheim', sans-serif;
+}
+#navbar a:hover{
+    color: antiquewhite;
+}
+#welcome-section{
+    background-color: rgb(41, 39, 43);
+    height: 100vh;
+    border-radius: 2px;
+    
+}
+#welcome-section div{
+    position: relative;
+    top: 50%;
+    color: white;
+    font-family: 'Anaheim', sans-serif;
+    animation: op;
+    animation-duration: 4000ms;
+    z-index: 0;
+}
+@keyframes op{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#projects{
+    background-color: rgb(55, 55, 73);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    font-family: 'Anaheim', sans-serif;
+    color: rgb(187, 202, 97);
+}
+#projects img{
+    height: 270px;
+    width: 380px;
+    border: 3px solid black;
+    border-radius: 7px;
+   
+}
+#projects div{
+    padding: 10px;
+}
+hr{
+    background-color: red;
+    border: 2px solid red;
+}
+#profile-link img{
+    height: 60px;
+    width: 60px;
+}
+.end{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer h1{
+    background-color: white;
+    border-radius: 4px;
+}
+
+
+
